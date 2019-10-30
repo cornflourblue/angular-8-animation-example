@@ -1,0 +1,22 @@
+﻿<!-- header -->
+<header>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/products" routerLinkActive="active">Products</a>
+        </li>
+    </ul>
+</header>
+
+<main>
+    <router-outlet></router-outlet>
+</main>
+
+<!-- footer -->
+<footer>
+    <p>
+        <a href="http://jasonwatmore.com">JasonWatmore.com</a>
+    </p>
+</footer>

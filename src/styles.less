@@ -1,0 +1,55 @@
+/* GENERAL STYLES AND CLASSES 
+--------------------------------------------------------------------- */
+body {
+    padding: 5px;
+
+    a { cursor: pointer }
+
+    ng-component {
+        display: block;
+    }
+}
+
+/* MAIN STYLES
+--------------------------------------------------------------------- */
+main {
+    padding: 20px;
+    min-height: 300px;
+
+    .products-table {
+        margin-top: 10px;
+        
+        td {
+            vertical-align: middle;
+        }
+
+        .delete-column {
+            width: 115px;
+            text-align: center;
+        }
+    }
+
+    /* side form */
+    .view-side-form {
+        .side-form {
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            right: 0;
+            width: 80%;
+            height: 100%;
+            overflow: auto;
+            background: #fff;
+            padding: 20px;
+            border-left: 1px solid #e0e0e0;
+        }
+    }
+}
+
+/* FOOTER STYLES
+--------------------------------------------------------------------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}

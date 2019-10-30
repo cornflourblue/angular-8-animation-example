@@ -1,0 +1,22 @@
+﻿<div class="side-form">
+    <h1>{{title}}</h1>
+    <div class="form-container">
+        <form (ngSubmit)="saveProduct()">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" [(ngModel)]="product.name" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label for="name">Price</label>
+                <input type="text" name="price" [(ngModel)]="product.price" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <a class="btn btn-default" routerLink="/products">Cancel</a>
+                <button [disabled]="saving" class="btn btn-primary">
+                    <span *ngIf="saving" class="spinner-border spinner-border-sm mr-1"></span>
+                    Save
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

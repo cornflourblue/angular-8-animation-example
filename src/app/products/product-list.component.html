@@ -1,0 +1,22 @@
+﻿<h1>Products</h1>
+<a routerLink="add" class="btn btn-sm btn-primary mt-1">Add Product</a>
+<table class="table table-bordered products-table">
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let product of products">
+        <td><a [routerLink]="['edit', product.id]">{{product.name}}</a></td>
+        <td>${{product.price}}</td>
+        <td class="delete-column">
+            <button (click)="deleteProduct(product.id)" [disabled]="product.deleting" class="btn btn-sm btn-danger">
+                <span *ngIf="product.deleting" class="spinner-border spinner-border-sm mr-1"></span>
+                Delete
+            </button>
+        </td>
+    </tr>
+</table>
+<div class="view-side-form">
+    <router-outlet></router-outlet>
+</div>
