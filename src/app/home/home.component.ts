@@ -13,5 +13,4 @@ import { fadeInAnimation } from '../_animations/index';
     host: { '[@fadeInAnimation]': '' }
 })
 
-export class HomeComponent {
-}
+export class HomeComponent { }

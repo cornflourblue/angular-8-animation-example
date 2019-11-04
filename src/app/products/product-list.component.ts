@@ -5,7 +5,6 @@ import { ProductService, PubSubService } from '../_services/index';
 
 // import fade in animation
 import { fadeInAnimation } from '../_animations/index';
-
 @Component({
     templateUrl: 'product-list.component.html',
 
@@ -15,7 +14,6 @@ import { fadeInAnimation } from '../_animations/index';
     // attach the fade in animation to the host (root) element of this component
     host: { '[@fadeInAnimation]': '' }
 })
-
 export class ProductListComponent implements OnInit, OnDestroy {
     products: any[];
     subscription: Subscription;

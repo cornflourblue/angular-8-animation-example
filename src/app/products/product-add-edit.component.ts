@@ -15,7 +15,6 @@ import { slideInOutAnimation } from '../_animations/index';
     // attach the slide in/out animation to the host (root) element of this component
     host: { '[@slideInOutAnimation]': '' }
 })
-
 export class ProductAddEditComponent implements OnInit {
     title: string;
     product: any = {};
